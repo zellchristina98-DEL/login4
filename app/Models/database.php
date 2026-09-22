@@ -11,10 +11,16 @@ class database extends Model
     public function pull($perpus, $z){
     return DB::table($perpus)->where($z)->first();
     }
-       protected $table = 'users';
+    protected $table = 'users';
       protected $fillable = [
         'name',
         'email',
         'password',
     ];
+    
+    public function tampil($table)
+    {
+        return DB::table($table)
+        ->get();
+    }
 }

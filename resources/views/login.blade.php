@@ -17,7 +17,6 @@
 
 
         <button type="submit">Login</button>
-        <button><a href="/inputdata">Inputdata</a></button>
     </form>
 </body>
 </html>

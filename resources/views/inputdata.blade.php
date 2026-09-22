@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>REGISTER</title>
 </head>
 <body>
     <h1>Sign Up</h1>

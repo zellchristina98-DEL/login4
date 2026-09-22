@@ -30,9 +30,18 @@ class logincontroller extends Controller
          }
     }
       public function home(){
-        return view ('/home');
+  {
+   if (session('u')>0){
+        $jalur= new database;
+        $hello['hai']=$jalur->tampil('users');
+         return view('home', $hello);
     }
-
+    else{
+        return redirect()->intended('/');
+    }
+    
+}
+}
     public function logout(){
         session()->flush();
         return redirect()->intended('/');
