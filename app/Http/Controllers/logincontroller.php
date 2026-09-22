@@ -37,4 +37,17 @@ class logincontroller extends Controller
         session()->flush();
         return redirect()->intended('/');
     }
+    public function form (Request $Request){{}
+            $data= $Request->validate([
+                'name'=>'required',
+                 'email'=>'required',
+                  'password'=>'required'
+            ]);
+            database::create($data);
+             session(['u' => $data['name']]);
+             return redirect('/home')->with('success', 'Data berhasil disimpan');
+    }
+              public function data(){
+        return view ('/inputdata');
+    }
 }
