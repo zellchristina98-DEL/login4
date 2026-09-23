@@ -5,7 +5,7 @@
 </head>
 <body>
     <h1>Sign Up</h1>
-    <form action="/input" method="POST">
+    <form action="/girasya" method="POST">
         @csrf
         <table>
             <tr>
@@ -26,7 +26,7 @@
             </tr>
             <tr>
                 <td></td>
-                <td><button type="submit">Daftar</button></td>
+                <td><button type="submit"><a href="/">Daftar</a></button></td>
             </tr>
         </table>
     </form>

@@ -30,7 +30,6 @@
 </table>
 
     <button><a href="/logout">Logout</a></button>
-    <button><a href="/inputdata">Inputdata</a></button>
  
 </body>
 </html>

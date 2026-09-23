@@ -17,6 +17,8 @@
 
 
         <button type="submit">Login</button>
+        <button><a href="/girasya">register</a></button>
+
     </form>
 </body>
 </html>
