@@ -11,3 +11,7 @@ Route::get('/logout','App\Http\Controllers\logincontroller@logout');
 
 Route::get('/girasya','App\Http\Controllers\logincontroller@tampil');
 Route::post('/input','App\Http\Controllers\logincontroller@zano');
+
+Route::get('/edit/{user}','App\Http\Controllers\logincontroller@editview');
+Route::put('/edit/{user}','App\Http\Controllers\logincontroller@update');
+Route::delete('/delete/{user}','App\Http\Controllers\logincontroller@delete');

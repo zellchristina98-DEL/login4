@@ -62,5 +62,26 @@ public function zano (Request $Request){
          public function tampil(){
         return view ('/girasya');
     }
-}
 
+  public function editview($id){
+
+    $jalur = new database;
+    $user = $jalur->pull('users', ['id' => $id]);
+    return view('edit', ['user' => $user]);
+}
+public function update(Request $request, $id)
+{
+    $data = $request->validate([
+        'name' => 'required',
+        'email' => 'required',
+        'password' => 'required'
+    ]);
+    database::where('id', $id)->update($data);
+    return redirect('/home');
+}
+public function delete($id)
+{
+    database::where('id', $id)->delete();
+    return redirect('/home');
+}
+}
