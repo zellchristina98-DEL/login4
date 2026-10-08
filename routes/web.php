@@ -13,5 +13,10 @@ Route::get('/girasya','App\Http\Controllers\logincontroller@tampil');
 Route::post('/input','App\Http\Controllers\logincontroller@zano');
 
 Route::get('/edit/{user}','App\Http\Controllers\logincontroller@editview');
-Route::put('/edit/{user}','App\Http\Controllers\logincontroller@update');
+Route::put('/edit/{user}',' App\Http\Controllers\logincontroller@update');
 Route::delete('/delete/{user}','App\Http\Controllers\logincontroller@delete');
+
+Route::get('/excel','App\Http\Controllers\logincontroller@excel');
+Route::get('/pdf','App\Http\Controllers\logincontroller@pdf');
+
+Route::get('/home', 'App\Http\Controllers\logincontroller@aksitanggal');

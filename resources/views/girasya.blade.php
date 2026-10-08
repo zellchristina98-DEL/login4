@@ -5,7 +5,7 @@
 </head>
 <body>
     <h1>Sign Up</h1>
-    <form action="/girasya" method="POST">
+    <form action="/input" method="POST">
         @csrf
         <table>
             <tr>
